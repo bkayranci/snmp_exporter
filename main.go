@@ -43,7 +43,7 @@ var (
 	listenAddress    = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9116").String()
 	dryRun           = kingpin.Flag("dry-run", "Only verify configuration is valid and exit.").Default("false").Bool()
 	uploadPersistent = kingpin.Flag("upload.persistent", "Change current config file with uploaded config file.").Default("false").Bool()
-	uploadConfig 	 = kingpin.Flag("upload.config", "Config could be changeable via upload api.").Default("false").Bool()
+	uploadConfig     = kingpin.Flag("upload.config", "Config could be changeable via upload api.").Default("false").Bool()
 
 	// Metrics about the SNMP exporter itself.
 	snmpDuration = prometheus.NewSummaryVec(
